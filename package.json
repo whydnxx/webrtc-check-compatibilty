@@ -1,0 +1,42 @@
+{
+  "name": "webrtc-check-capatibilty",
+  "version": "1.0.0",
+  "description": "A way to add webrtc troubleshooting to your app",
+  "main": "src/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "webpack --env=prod --progress --profile --colors"
+  },
+  "repository": "https://github.com/mypurecloud/webrtc-troubleshooter",
+  "engines": {
+    "node": ">= 4.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.1",
+    "browser-env": "^3.1.0",
+    "semistandard": "^12.0.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webrtc-adapter": "^6.1.5"
+  },
+  "dependencies": {
+    "localmedia": "^5.0.0",
+    "rtcpeerconnection": "^8.0.1",
+    "webrtc-stats-gatherer": "^6.0.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "semistandard": {
+    "ignore": [
+      "**/dist"
+    ]
+  }
+}
